@@ -1,4 +1,13 @@
 #include <stdio.h>
+void printArray(int arr[], int start, int end){
+	//printf("Pass: ");
+	for(int i = start; i <= end; i++){
+		printf("%d ", arr[i]);
+	}
+	printf("\n");
+}
+
+void merge(int arr[],int left, int mid, int right){
 	int n1 = mid-left+1;
 	int n2 = right-mid;
 
